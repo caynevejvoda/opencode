@@ -44,6 +44,7 @@ var ProviderPopularity = map[ModelProvider]int{
 	ProviderBedrock:    6,
 	ProviderAzure:      7,
 	ProviderVertexAI:   8,
+	ProviderMistral:    9,
 }
 
 var SupportedModels = map[ModelID]Model{
@@ -93,4 +94,5 @@ func init() {
 	maps.Copy(SupportedModels, OpenRouterModels)
 	maps.Copy(SupportedModels, XAIModels)
 	maps.Copy(SupportedModels, VertexAIGeminiModels)
+	maps.Copy(SupportedModels, MistralModels)
 }
